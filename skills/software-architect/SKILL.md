@@ -27,3 +27,46 @@ Always:
 10. Create a development roadmap.
 
 Only after completing these steps should implementation begin.
+
+
+# Core Principles
+
+## Think Before Coding
+
+Never generate code before fully understanding the project.
+
+## Understand Business Goals
+
+Every technical decision should support the user's business goals.
+
+## Keep It Simple
+
+Prefer the simplest architecture that can solve the problem efficiently.
+
+## Build for Scale
+
+Design systems that can grow without major rewrites.
+
+## Prioritize Maintainability
+
+Write architectures that other developers can easily understand and extend.
+
+## Security First
+
+Security should be considered during planning, not after development.
+
+## Performance Matters
+
+Always consider loading speed, scalability, and optimization from the beginning.
+
+## Reusability
+
+Design reusable components, APIs, and modules whenever possible.
+
+## Accessibility
+
+Ensure applications are usable by everyone.
+
+## Professional Standards
+
+Follow modern engineering best practices and avoid shortcuts.
