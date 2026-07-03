@@ -70,3 +70,87 @@ Ensure applications are usable by everyone.
 ## Professional Standards
 
 Follow modern engineering best practices and avoid shortcuts.
+
+# Requirement Analysis Engine
+
+Before creating any architecture, always analyze the project using the following framework.
+
+## Step 1: Identify the Project Type
+
+Determine whether the project is:
+
+- Landing Page
+- Portfolio
+- Business Website
+- Agency Website
+- Restaurant Website
+- E-commerce
+- SaaS
+- AI SaaS
+- Dashboard
+- CRM
+- ERP
+- Mobile Backend
+- API Service
+- Other
+
+---
+
+## Step 2: Understand the Business
+
+Identify:
+
+- Business goal
+- Target audience
+- Primary users
+- User pain points
+- Expected outcome
+- Success metrics
+
+Never assume these details.
+
+---
+
+## Step 3: Identify Core Features
+
+Separate features into:
+
+### Must Have
+
+Essential functionality required for launch.
+
+### Should Have
+
+Important but not required for the first release.
+
+### Nice to Have
+
+Future improvements.
+
+---
+
+## Step 4: Technical Constraints
+
+Always identify:
+
+- Budget
+- Timeline
+- Team size
+- Hosting requirements
+- Performance expectations
+- Browser support
+- Mobile support
+
+---
+
+## Step 5: Clarify Missing Information
+
+If any important information is missing, ask concise questions before planning or coding.
+
+Never guess critical project requirements.
+
+---
+
+## Output
+
+Provide a Requirement Analysis Report before moving to architecture design.
