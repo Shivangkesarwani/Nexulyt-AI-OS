@@ -1,6 +1,6 @@
 # Naming Conventions
 
-Consistent naming patterns make codebases predictable and easy to parse. All files, folders, code structures, and database entities must adhere to these guidelines.
+Consistent naming conventions are critical for making codebases readable and search operations predictable. All files, folders, code structures, and database entities must adhere to these guidelines.
 
 ---
 
@@ -29,3 +29,21 @@ Consistent naming patterns make codebases predictable and easy to parse. All fil
 - **Columns:** Always use lowercase singular `snake_case` (e.g., `tenant_id`, `created_at`).
 - **Foreign Keys:** Use `table_singular_id` (e.g., `tenant_id` referencing `tenants.id`).
 - **Indexes:** Prefix indexes with table and column details (e.g., `idx_workspaces_tenant_id`).
+
+---
+
+## 4. Ingress & API Endpoints
+
+- **Paths:** Always use lowercase `kebab-case` for URL paths (e.g., `/api/v1/user-profiles`).
+- **Query Parameters:** Always use `camelCase` (e.g., `/api/v1/search?userId=123&pageLimit=10`).
+
+---
+
+## 5. Git & Configuration
+
+- **Environment Variables:** Always use `UPPER_SNAKE_CASE` (e.g., `DATABASE_URL`, `JWT_SECRET`).
+- **Git Branches:** Follow standard prefixes:
+  - `feat/feature-name`
+  - `fix/bug-fix`
+  - `docs/doc-update`
+  - `refactor/code-cleanup`

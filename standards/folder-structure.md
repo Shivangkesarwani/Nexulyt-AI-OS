@@ -1,34 +1,16 @@
 # Folder Structure Standards
 
-All features, skills, templates, and configurations within the **Nexulyt-AI-OS** repository must follow a standardized directory layout. This document defines the structural patterns that must be maintained.
+This document establishes the repository structure conventions and defines the rules and purposes of every top-level folder within the **Nexulyt-AI-OS** repository.
 
 ---
 
-## 1. Skill Structure
+## 1. Directory Structure
 
-Each specialized AI skill resides under `skills/<skill-name>/` and must contain the following core files:
-
-```text
-skills/<skill-name>/
-├── SKILL.md          # Core AI Identity, cognitive paradigm, and rules
-├── README.md         # Public overview, workflow, and dependencies
-├── CHECKLIST.md      # Domain-specific validation checklists
-└── EXAMPLES.md       # High-density, real-world examples (no source code)
-```
-
-### Naming Conventions for Skills
-- Skill directories must be in `kebab-case` (e.g., `full-stack-orchestrator`, `software-architect`).
-- Standard file names (`SKILL.md`, `README.md`, `CHECKLIST.md`, `EXAMPLES.md`) must be in uppercase.
-
----
-
-## 2. Standard Repository Directories
-
-The root of the repository is structured as follows:
+The root directory is structured as follows:
 
 ```text
 Nexulyt-AI-OS/
-├── skills/              # Cognitive definitions and domain logic for each agent
+├── skills/              # The "brains" — cognitive definitions for each agent
 ├── prompts/             # System prompts for bootstrapping LLMs into roles
 ├── templates/           # Configuration files, Dockerfiles, and templates
 ├── workflows/           # Declarative multi-agent execution pipeline configurations
@@ -37,29 +19,45 @@ Nexulyt-AI-OS/
 ├── docs/                # Comprehensive technical guides and architectural concepts
 ├── examples/            # Reference implementation files showing correct structures
 ├── assets/              # Architecture diagrams, visual elements, and graphics
-├── LICENSE              # Repository license configuration
 └── README.md            # Repository landing page and onboarding documentation
 ```
 
 ---
 
-## 3. Custom Application Boilerplate Structure
+## 2. Directory Explanations
 
-When generating application templates under `templates/` or creating examples in `examples/`, follow the standard microservices-ready project layout:
+### `skills/`
+- **Purpose:** The core cognitive assets of the repository. Every folder represents a specialized AI agent (e.g. `database-architect`, `security-engineer`).
+- **Rules:** Every folder must be named in `kebab-case` and contain exactly `SKILL.md`, `README.md`, `CHECKLIST.md`, and `EXAMPLES.md`.
 
-```text
-app-template/
-├── src/
-│   ├── components/      # Shared presentational UI elements
-│   ├── services/        # Business logic and external API integrations
-│   ├── database/        # Migrations, schemas, and seeding configs
-│   ├── routes/          # API endpoint route declarations
-│   ├── utils/           # Shared helper functions
-│   └── index.ts         # Application entry point
-├── tests/               # Unit, integration, and E2E test suites
-├── Dockerfile           # Multi-stage, non-root runner build specification
-├── docker-compose.yml   # Multi-service local orchestrator configurations
-├── .dockerignore        # Context exclusion guidelines
-├── .env.example         # Blank template for required environment variables
-└── package.json         # Dependency configuration files with pinned versions
-```
+### `docs/`
+- **Purpose:** Central technical documentation library for human developers and system integrators.
+- **Rules:** Files must cover setup instructions, release details, architectures, guides, and troubleshooting steps.
+
+### `prompts/`
+- **Purpose:** Houses static system prompt templates and runtime context injection instructions to configure raw APIs.
+- **Rules:** Formatted as modular markdown files separating roles, actions, and safety boundaries.
+
+### `templates/`
+- **Purpose:** Holds configuration templates (Dockerfiles, kubernetes manifests, yaml workflows) that can be easily injected.
+- **Rules:** Must use pinned versions and follow security-hardened patterns.
+
+### `workflows/`
+- **Purpose:** Declarative orchestrator pipeline configurations.
+- **Rules:** Formats execution sequences and phase gates.
+
+### `standards/`
+- **Purpose:** Defines the rules for variables, files, folders, commit messages, and coding practices.
+- **Rules:** Changes to standards require an ADR and validation.
+
+### `checklists/`
+- **Purpose:** Domain-agnostic checklists for validating production readiness.
+- **Rules:** Checklist items must be structured with standard markdown check indicators (`- [ ]`).
+
+### `examples/`
+- **Purpose:** Reference implementations.
+- **Rules:** Code snippets must be complete, tested, and follow all standards.
+
+### `assets/`
+- **Purpose:** Media folder for diagrams, pictures, and graphics.
+- **Rules:** Do not commit raw heavy assets. Use optimized WebP formats for visuals.
