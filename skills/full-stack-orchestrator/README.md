@@ -48,7 +48,7 @@ The Full-Stack Orchestrator eliminates these boundary failures by ensuring every
 | Skill | Domain | Role in Orchestration |
 |---|---|---|
 | [Software Architect](file:///d:/projects/Nexulyt-AI-OS/skills/software-architect) | Architecture | Defines the system design that all implementation skills build within |
-| [UI/UX Designer](file:///d:/projects/Nexulyt-AI-OS/skills/uiux-designer) | Design | Translates architecture into user interface specifications for Frontend |
+| [UI/UX Designer](file:///d:/projects/Nexulyt-AI-OS/skills/ui-ux-designer) | Design | Translates architecture into user interface specifications for Frontend |
 | [Frontend Engineer](file:///d:/projects/Nexulyt-AI-OS/skills/frontend-engineer) | Frontend | Implements UI from UX specifications within the architectural boundaries |
 | [Backend Engineer](file:///d:/projects/Nexulyt-AI-OS/skills/backend-engineer) | Backend | Implements APIs and services within the architectural design |
 | [Database Architect](file:///d:/projects/Nexulyt-AI-OS/skills/database-architect) | Data | Designs the schema and data layer that Backend and AI depend on |

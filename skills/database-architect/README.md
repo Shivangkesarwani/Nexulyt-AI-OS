@@ -50,7 +50,7 @@ The Database Architect skill defines the data modeling paradigms, indexing model
 
 ## 7. Folder Structure
 ```
-skills/database-architec/
+skills/database-architect/
 ├── SKILL.md      # Core AI Identity, database philosophy, and modeling rules
 ├── CHECKLIST.md  # Professional QA audit checklists for migrations and indexes
 └── EXAMPLES.md   # Step-by-step schema designs and transactional examples
